@@ -1,0 +1,16 @@
+<html>
+<body>
+
+<h4>jsonp.cybersecurity.seu.edu</h4>
+<div id="jsonpdate">/api/jsonpdate : </div>
+<script>
+	function handleTime (data) {
+		const divjsonpdate = document.querySelector('#jsonpdate')
+		divjsonpdate.textContent = '/api/jsonpdate : ' + data.date
+	}
+</script>
+<script src='http://time.cybersecurity.seu.edu/api/jsonpdate?callback=handleTime'></script>
+
+</body>
+</html>
+
